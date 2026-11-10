@@ -8,9 +8,9 @@ Save a memo to [flomo](https://flomoapp.com) through your personal webhook (a fl
 
 | Command | Keywords | What it does |
 |---|---|---|
-| Save to flomo | `flomo`, `浮墨`, `memo`, `记一笔` | Opens a form with the text you typed after the keyword, then `POST`s `{"content": "…"}` to your webhook |
+| Save to flomo | `flomo`, `浮墨`, `memo`, `记一笔` | Find it by keyword and press Tab to open its form, then `POST`s `{"content": "…"}` to your webhook |
 
-Example: type `flomo read a great book #reading` and press Return.
+Example: type `flomo`, press Tab, write `read a great book #reading`, and press Return. Typing in the main search never sends anything by itself.
 
 ## Permissions
 
@@ -33,9 +33,9 @@ Example: type `flomo read a great book #reading` and press Return.
 
 | 命令 | 关键词 | 作用 |
 |---|---|---|
-| 记到 flomo | `flomo`、`浮墨`、`memo`、`记一笔` | 打开表单（预填关键词后面输入的文字），然后把 `{"content": "…"}` POST 到你的记录 API |
+| 记到 flomo | `flomo`、`浮墨`、`memo`、`记一笔` | 用关键词找到后按 Tab 打开表单，然后把 `{"content": "…"}` POST 到你的记录 API |
 
-例：输入 `flomo 读完一本好书 #阅读` 后回车。
+例：输入 `flomo`，按 Tab，写下 `读完一本好书 #阅读`，回车。在全局搜索里打字本身不会发出任何内容。
 
 ### 权限
 

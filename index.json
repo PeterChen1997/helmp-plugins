@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-10T10:25:06Z",
-  "commit": "7d02729b950dbb7de8718f43603d0c3f11686975",
+  "generated_at": "2026-11-10T13:30:49Z",
+  "commit": "5705fda25f9b51aac819b6e3107b9fcaaf28b58f",
   "plugins": [
     {
       "id": "dev.helmp.flomo",
@@ -41,8 +41,8 @@
       "files": [
         {
           "path": "README.md",
-          "sha256": "200c3adad96c6d0fd764a4acabebeb31f49eb9e83f683befa96cfee92096b3fd",
-          "size": 2037,
+          "sha256": "19e1cae9076382815e5bfb90e56d804ae76aebe32647d20911b92ab111703c52",
+          "size": 2175,
           "executable": false
         },
         {
@@ -97,8 +97,8 @@
       "files": [
         {
           "path": "README.md",
-          "sha256": "1a1d5ddb588334e7313706b6c97540361d3135e71571cde4a504ccf438d5b3bd",
-          "size": 1753,
+          "sha256": "680f34ea8572f7e0bb751918430386159553f5369b9ae18f3f6e3c21000c8fd3",
+          "size": 1773,
           "executable": false
         },
         {
@@ -169,8 +169,8 @@
       "files": [
         {
           "path": "README.md",
-          "sha256": "f18fce883a0cdc17a75a5f68b6e63b46e2d54530fb99825a979166a9fd0ff8bd",
-          "size": 2433,
+          "sha256": "203521a1af24ac3cced32f4fd240b0cf38cc648e83528df9ab6d1881472cf113",
+          "size": 2515,
           "executable": false
         },
         {

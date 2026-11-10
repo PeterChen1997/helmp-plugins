@@ -8,9 +8,9 @@ Capture a new note into an [Obsidian](https://obsidian.md) vault with the [`obsi
 
 | Command | Keywords | What it does |
 |---|---|---|
-| Quick Capture to Obsidian | `obsidian`, `ob`, `quick capture`, `速记` | Opens a form (note text pre-filled with what you typed, title defaults to the current date and time), then opens `obsidian://new?vault=…&name=…&content=…` |
+| Quick Capture to Obsidian | `obsidian`, `ob`, `quick capture`, `速记` | Find it by keyword and press Tab to open its form (title defaults to the current date and time), then opens `obsidian://new?vault=…&name=…&content=…` |
 
-Example: type `ob call the dentist` and press Return.
+Example: type `ob`, press Tab, write `call the dentist`, and press Return.
 
 ## Permissions
 
@@ -32,9 +32,9 @@ In Helmp, open **Settings › Plugins › Obsidian** and fill in **Vault name**:
 
 | 命令 | 关键词 | 作用 |
 |---|---|---|
-| Obsidian 快速记录 | `obsidian`、`ob`、`quick capture`、`速记` | 打开表单（内容预填关键词后面输入的文字，标题默认是当前日期时间），然后打开 `obsidian://new?vault=…&name=…&content=…` |
+| Obsidian 快速记录 | `obsidian`、`ob`、`quick capture`、`速记` | 用关键词找到后按 Tab 打开表单（标题默认是当前日期时间），然后打开 `obsidian://new?vault=…&name=…&content=…` |
 
-例：输入 `ob 记得约牙医` 后回车。
+例：输入 `ob`，按 Tab，写下 `记得约牙医`，回车。
 
 ### 权限
 

@@ -1,6 +1,6 @@
 # Quick Search
 
-Type a keyword, a space, then what to search, and Helmp opens the search page in your browser. Complements the web search engines in **Settings › Extensions**.
+Type a keyword, press Tab, then type what to search and press Return; Helmp opens the search page in your browser. Complements the web search engines in **Settings › Extensions**.
 
 > Helmp already ships this plugin. This folder is its source and public version: use it as a reference for your own plugins.
 
@@ -17,7 +17,7 @@ Type a keyword, a space, then what to search, and Helmp opens the search page in
 | Bilibili | `bili`, `bilibili`, `b站`, `哔哩哔哩` | search.bilibili.com |
 | Xiaohongshu (RED) | `xhs`, `xiaohongshu`, `rednote`, `小红书` | xiaohongshu.com search |
 
-Example: `npm react`, `gt good morning`.
+Example: `npm` Tab `react` Return; `gt` Tab `good morning` Return.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ None. Optionally pick the **Google Translate target** language in **Settings ›
 
 ## 简体中文：快捷搜索
 
-输入关键词加空格，再输入要搜的内容，Helmp 会在浏览器里打开对应的搜索页。与「设置 › 扩展 › 网页搜索」互补。
+输入关键词后按 Tab，再输入要搜的内容并回车，Helmp 会在浏览器里打开对应的搜索页。与「设置 › 扩展 › 网页搜索」互补。
 
 > Helmp 已自带此插件，这里是它的源码与公开版本，可以作为写插件的参考。
 
@@ -50,7 +50,7 @@ None. Optionally pick the **Google Translate target** language in **Settings ›
 | B 站 | `bili`、`bilibili`、`b站`、`哔哩哔哩` | B 站搜索 |
 | 小红书 | `xhs`、`xiaohongshu`、`rednote`、`小红书` | 小红书搜索 |
 
-例：`npm react`、`gt 早上好`。
+例：`npm` Tab `react` 回车；`gt` Tab `早上好` 回车。
 
 ### 权限
 
