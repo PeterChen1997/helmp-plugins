@@ -1,0 +1,191 @@
+{
+  "schema": 1,
+  "generated_at": "2026-11-10T10:24:20Z",
+  "commit": null,
+  "plugins": [
+    {
+      "id": "dev.helmp.flomo",
+      "version": "1.0.0",
+      "name": {
+        "en": "flomo",
+        "zh-Hans": "flomo"
+      },
+      "description": {
+        "en": "Save a memo to flomo through your personal webhook (a flomo PRO feature). #tags in the text become flomo tags.",
+        "zh-Hans": "用你的记录 API（flomo 会员功能）把一段文字记到 flomo，正文里的 #标签 就是 flomo 标签。"
+      },
+      "author": "Helmp",
+      "homepage": "https://flomoapp.com/mine?source=incoming_webhook",
+      "license": "MIT",
+      "icon": "icon.png",
+      "keywords": [
+        "flomo",
+        "浮墨",
+        "memo",
+        "记一笔"
+      ],
+      "commands": 1,
+      "permissions": [
+        "network:flomoapp.com"
+      ],
+      "permissions_text": {
+        "en": [
+          "Network access: flomoapp.com (URL comes from preference webhook)"
+        ],
+        "zh-Hans": [
+          "访问网络：flomoapp.com（地址来自偏好设置 webhook）"
+        ]
+      },
+      "review": [],
+      "source": "https://github.com/PeterChen1997/helmp-plugins/tree/main/plugins/dev.helmp.flomo",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "200c3adad96c6d0fd764a4acabebeb31f49eb9e83f683befa96cfee92096b3fd",
+          "size": 2037,
+          "executable": false
+        },
+        {
+          "path": "icon.png",
+          "sha256": "a7ee745f815bbd727207ce6ccfd0c92c851442e5cf0e58bd3e5e987db5e9dd1b",
+          "size": 11068,
+          "executable": false
+        },
+        {
+          "path": "plugin.json",
+          "sha256": "1b3d01b8b31b3f0e863b7af54259fd437946f1136f4ff57e4bc7f9f2ba3f116c",
+          "size": 2111,
+          "executable": false
+        }
+      ]
+    },
+    {
+      "id": "dev.helmp.obsidian",
+      "version": "1.0.0",
+      "name": {
+        "en": "Obsidian",
+        "zh-Hans": "Obsidian"
+      },
+      "description": {
+        "en": "Capture a new note into an Obsidian vault with the obsidian://new URL scheme. Nothing leaves your Mac.",
+        "zh-Hans": "用 obsidian://new 链接在 Obsidian 仓库里新建一条笔记，内容不经过网络。"
+      },
+      "author": "Helmp",
+      "homepage": "https://help.obsidian.md/Extending+Obsidian/Obsidian+URI",
+      "license": "MIT",
+      "icon": "icon.png",
+      "keywords": [
+        "obsidian",
+        "ob",
+        "quick capture",
+        "速记"
+      ],
+      "commands": 1,
+      "permissions": [
+        "open:obsidian"
+      ],
+      "permissions_text": {
+        "en": [
+          "Open obsidian:// links (launches the matching app)"
+        ],
+        "zh-Hans": [
+          "打开 obsidian:// 链接（会启动对应的 App）"
+        ]
+      },
+      "review": [],
+      "source": "https://github.com/PeterChen1997/helmp-plugins/tree/main/plugins/dev.helmp.obsidian",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "1a1d5ddb588334e7313706b6c97540361d3135e71571cde4a504ccf438d5b3bd",
+          "size": 1753,
+          "executable": false
+        },
+        {
+          "path": "icon.png",
+          "sha256": "ae4dd9e4416088585b845059df264dbd29c104641939ddb5a0e158c7c1832e9e",
+          "size": 12399,
+          "executable": false
+        },
+        {
+          "path": "plugin.json",
+          "sha256": "cfd6a1b49dceecc057f78d3b629e166d49623d0ae176b53398ca6334546fe1e3",
+          "size": 1780,
+          "executable": false
+        }
+      ]
+    },
+    {
+      "id": "dev.helmp.quicklinks",
+      "version": "1.0.0",
+      "name": {
+        "en": "Quick Search",
+        "zh-Hans": "快捷搜索"
+      },
+      "description": {
+        "en": "Type a keyword, a space, then what to search: gh, npm, crates, mdn, gt, zhihu, bili, xhs. Complements the web search engines in Settings › Extensions.",
+        "zh-Hans": "输入关键词加空格，再输入要搜的内容：gh、npm、crates、mdn、gt、zhihu、bili、xhs。与「设置 › 扩展 › 网页搜索」互补。"
+      },
+      "author": "Helmp",
+      "homepage": null,
+      "license": "MIT",
+      "icon": "icon.png",
+      "keywords": [
+        "gh",
+        "github repo",
+        "npm",
+        "crates",
+        "crate",
+        "cargo",
+        "mdn",
+        "gt",
+        "google translate",
+        "谷歌翻译",
+        "zhihu",
+        "知乎",
+        "bili",
+        "bilibili",
+        "b站",
+        "哔哩哔哩",
+        "xhs",
+        "xiaohongshu",
+        "rednote",
+        "小红书"
+      ],
+      "commands": 8,
+      "permissions": [
+        "open:https"
+      ],
+      "permissions_text": {
+        "en": [
+          "Open web pages in your browser"
+        ],
+        "zh-Hans": [
+          "在浏览器中打开网页"
+        ]
+      },
+      "review": [],
+      "source": "https://github.com/PeterChen1997/helmp-plugins/tree/main/plugins/dev.helmp.quicklinks",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "f18fce883a0cdc17a75a5f68b6e63b46e2d54530fb99825a979166a9fd0ff8bd",
+          "size": 2433,
+          "executable": false
+        },
+        {
+          "path": "icon.png",
+          "sha256": "1ed480cc1856b9df06857992d6f8a7b2b6e63118409d1937bf0ea9b85091ce8f",
+          "size": 10824,
+          "executable": false
+        },
+        {
+          "path": "plugin.json",
+          "sha256": "1392195b36012669f69e0733a7fc2a149eab5959cfbcb54480cbdc60b47b435c",
+          "size": 4453,
+          "executable": false
+        }
+      ]
+    }
+  ]
+}

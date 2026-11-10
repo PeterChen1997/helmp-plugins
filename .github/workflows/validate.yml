@@ -1,0 +1,46 @@
+# 校验 PR 里的插件。只用 pull_request（不用 pull_request_target）：PR 的代码在没有写权限、没有密钥的环境里运行。
+name: Validate
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # --base-ref 要对比 base 分支的历史。
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate plugins
+        shell: bash
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          set +e
+          python3 -I scripts/build-index.py --check --base-ref "origin/${BASE_REF}" > "$RUNNER_TEMP/validate.log" 2>&1
+          status=$?
+          set -e
+          cat "$RUNNER_TEMP/validate.log"
+          {
+            echo "## Plugin validation"
+            echo
+            if [ "$status" -eq 0 ]; then echo "Result: passed"; else echo "Result: **failed**"; fi
+            echo
+            echo "Items under **Needs human review** (scripts, executables, mcpServers, clipboard, keystrokes) must be read by the maintainer before merging."
+            echo
+            python3 -I -c 'import html, sys; print("<pre>" + html.escape(sys.stdin.read()) + "</pre>")' < "$RUNNER_TEMP/validate.log"
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit "$status"
+
+      - name: Test the validator
+        run: python3 -I -m unittest discover -s scripts -p 'test_*.py'
