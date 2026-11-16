@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-10T13:31:35Z",
-  "commit": "c2c80f7b583999621f3b08e45967e22ce36ed5ca",
+  "generated_at": "2026-11-16T01:59:03Z",
+  "commit": "8d29e34d8f6e628b3600ed3d626cda4c73a43062",
   "plugins": [
     {
       "id": "dev.helmp.flomo",
@@ -55,6 +55,58 @@
           "path": "plugin.json",
           "sha256": "1b3d01b8b31b3f0e863b7af54259fd437946f1136f4ff57e4bc7f9f2ba3f116c",
           "size": 2111,
+          "executable": false
+        }
+      ]
+    },
+    {
+      "id": "dev.helmp.lighter",
+      "version": "1.0.0",
+      "name": {
+        "en": "Lighter",
+        "zh-Hans": "灵感园丁"
+      },
+      "description": {
+        "en": "Jot an idea down into Lighter (灵感园丁) with an API Key from the app. The gardener picks it up from there.",
+        "zh-Hans": "用灵感园丁 App 里生成的 API Key，把一个想法记到灵感园丁，园丁接着替你跟踪。"
+      },
+      "author": "Helmp",
+      "homepage": "https://blog.peterchen97.cn/lighter/",
+      "license": "MIT",
+      "icon": null,
+      "keywords": [
+        "lg",
+        "lighter",
+        "灵感",
+        "灵感园丁",
+        "想法",
+        "idea"
+      ],
+      "commands": 1,
+      "permissions": [
+        "network:lighter-sync.fly.dev"
+      ],
+      "permissions_text": {
+        "en": [
+          "Network access: lighter-sync.fly.dev"
+        ],
+        "zh-Hans": [
+          "访问网络：lighter-sync.fly.dev"
+        ]
+      },
+      "review": [],
+      "source": "https://github.com/PeterChen1997/helmp-plugins/tree/main/plugins/dev.helmp.lighter",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "497a728417647f20bbd53a6b086f325d279621609bf6a794a42810621369b05a",
+          "size": 2105,
+          "executable": false
+        },
+        {
+          "path": "plugin.json",
+          "sha256": "edf437ec5fb4407a7d3d6ad1c7a518599a94e4b1e5b90961a0bd41b4e60a5c74",
+          "size": 2091,
           "executable": false
         }
       ]
