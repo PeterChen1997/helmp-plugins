@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "dev.helmp.lighter",
+  "name": { "en": "Lighter", "zh-Hans": "灵感园丁" },
+  "description": {
+    "en": "Jot an idea down into Lighter (灵感园丁) with an API Key from the app. The gardener picks it up from there.",
+    "zh-Hans": "用灵感园丁 App 里生成的 API Key，把一个想法记到灵感园丁，园丁接着替你跟踪。"
+  },
+  "version": "1.0.0",
+  "author": "Helmp",
+  "license": "MIT",
+  "homepage": "https://blog.peterchen97.cn/lighter/",
+  "icon": "sprout",
+  "tint": "green",
+  "preferences": [
+    {
+      "id": "apiKey",
+      "type": "secret",
+      "title": { "en": "API Key", "zh-Hans": "API Key" },
+      "description": {
+        "en": "Generate it in the Lighter app: Settings › API Key. It starts with lk_ and can only add ideas. Stored in the Keychain only.",
+        "zh-Hans": "在灵感园丁 App「设置 › API Key」里生成，以 lk_ 开头，只能新建想法。只存在钥匙串里。"
+      },
+      "placeholder": "lk_…",
+      "required": true
+    }
+  ],
+  "commands": [
+    {
+      "id": "idea",
+      "title": { "en": "Save to Lighter", "zh-Hans": "记到灵感园丁" },
+      "subtitle": { "en": "Jot an idea down", "zh-Hans": "随手记一个想法" },
+      "keywords": ["lg", "lighter", "灵感", "灵感园丁", "想法", "idea"],
+      "form": [
+        {
+          "id": "content",
+          "type": "textarea",
+          "label": { "en": "Idea", "zh-Hans": "想法" },
+          "placeholder": { "en": "What's the idea?", "zh-Hans": "有什么想法…" },
+          "required": true,
+          "default": "{{query}}"
+        }
+      ],
+      "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "https://lighter-sync.fly.dev/v1/ideas",
+        "headers": { "Authorization": "Bearer {{pref.apiKey|trim}}" },
+        "json": { "content": "{{form.content}}" },
+        "timeoutMs": 15000,
+        "success": { "status": [201] },
+        "message": { "en": "Saved to Lighter", "zh-Hans": "已记到灵感园丁" },
+        "errorPath": "message"
+      }
+    }
+  ]
+}
